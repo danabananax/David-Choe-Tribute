@@ -1,0 +1,28 @@
+#main {
+  display: grid;
+  grid-template-columns: "25% 2fr 1fr 25%";
+  grid-template-areas: ". main-text title-img .";
+  grid-template-rows: auto;
+  height: 100vh;
+}
+
+#main-text {
+  grid-area: main-text;
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  font: 4em "Cormorant Garamond", serif;
+  background-color: grey;
+}
+
+#subtitle {
+  font: 1em "Cormorant Garamond", serif;
+  background-color: lightblue;
+}
+
+#title_image {
+  grid-area: title-img;
+  width: 32em;
+}
