@@ -1,24 +1,31 @@
-body {padding: 0; margin: 0}
-
-#title, #subtitle, #about {
-  font-family: "Cormorant Garamond", serif; 
+body {
+  padding: 0;
+  margin: 0
 }
+
+#title,
+#subtitle,
+#about {
+  font-family: "Cormorant Garamond", serif;
+}
+
 #main {
-  padding: 0; margin: 0;
+  padding: 0;
+  margin: 0;
   height: 200vh;
-  display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-      ". main-text title-img ."
-      ". about about ."
-      ". gallery gallery .";
-    grid-gap: 1em;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". main-text title-img ."
+    ". about about ."
+    ". gallery gallery .";
+  grid-gap: 1em;
+  align-items: center;
 }
 
 #main-text {
-  grid-area: main-text; 
+  grid-area: main-text;
   display: flex;
   flex-direction: column;
   padding-bottom: 3em;
