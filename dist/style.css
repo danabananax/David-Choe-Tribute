@@ -14,7 +14,7 @@ body {
   margin: 0;
   height: 200vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 25% 1fr 1fr 25%;
   grid-template-rows: auto;
   grid-template-areas:
     ". main-text title-img ."
@@ -63,4 +63,24 @@ body {
   margin: 0;
   font-size: 2em;
   text-align: center;
+}
+
+.gallery-img {
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+#gallery {
+  grid-area: gallery;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.column {
+  padding-left: 32px;
+  padding-right: 32px;
+  width: 22em;
+  display: flex;
+  flex-direction: column;
 }
